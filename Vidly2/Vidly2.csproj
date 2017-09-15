@@ -229,6 +229,18 @@
     <Compile Include="Migrations\201709151320017_AddBirthDateColumnToCustomersTable.Designer.cs">
       <DependentUpon>201709151320017_AddBirthDateColumnToCustomersTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709151330115_EmptyMigrationAddBirthdateData.cs" />
+    <Compile Include="Migrations\201709151330115_EmptyMigrationAddBirthdateData.Designer.cs">
+      <DependentUpon>201709151330115_EmptyMigrationAddBirthdateData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709151409582_MakeBirthDateNullable.cs" />
+    <Compile Include="Migrations\201709151409582_MakeBirthDateNullable.Designer.cs">
+      <DependentUpon>201709151409582_MakeBirthDateNullable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709151414589_MandeNameRequiredInMembershipTypes.cs" />
+    <Compile Include="Migrations\201709151414589_MandeNameRequiredInMembershipTypes.Designer.cs">
+      <DependentUpon>201709151414589_MandeNameRequiredInMembershipTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -344,6 +356,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709151320017_AddBirthDateColumnToCustomersTable.resx">
       <DependentUpon>201709151320017_AddBirthDateColumnToCustomersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709151330115_EmptyMigrationAddBirthdateData.resx">
+      <DependentUpon>201709151330115_EmptyMigrationAddBirthdateData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709151409582_MakeBirthDateNullable.resx">
+      <DependentUpon>201709151409582_MakeBirthDateNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709151414589_MandeNameRequiredInMembershipTypes.resx">
+      <DependentUpon>201709151414589_MandeNameRequiredInMembershipTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
