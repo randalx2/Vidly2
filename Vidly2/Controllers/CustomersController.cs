@@ -23,6 +23,7 @@ namespace Vidly2.Controllers
         {
             _context.Dispose();
         }
+
         // GET: Customers
         public ActionResult Index()
         {
@@ -30,6 +31,33 @@ namespace Vidly2.Controllers
 
             return View(customers);
         }
+
+        /*
+        public ActionResult New()
+        {
+            var membershipTypes = _context.MembershipTypes.ToList();
+            var viewModel = new CustomerFormViewModel
+            {
+                Customer = new Customer(),
+                MembershipTypes = membershipTypes
+            };
+
+            return View("CustomerForm", viewModel);
+        }
+        */
+
+        
+        public ActionResult Details(int id)
+        {
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+
+            if (customer == null)
+                return HttpNotFound();
+
+            return View(customer);
+        }
+
+
 
     }
 }
