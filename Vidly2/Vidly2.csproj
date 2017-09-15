@@ -217,6 +217,14 @@
     <Compile Include="Migrations\201709132146493_ApplyAnnotationsToCustomerName.Designer.cs">
       <DependentUpon>201709132146493_ApplyAnnotationsToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709151230092_AddNameToMembershipType.cs" />
+    <Compile Include="Migrations\201709151230092_AddNameToMembershipType.Designer.cs">
+      <DependentUpon>201709151230092_AddNameToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709151238015_EmptyMigrationToSeedNameColumnInMemberShipTypes.cs" />
+    <Compile Include="Migrations\201709151238015_EmptyMigrationToSeedNameColumnInMemberShipTypes.Designer.cs">
+      <DependentUpon>201709151238015_EmptyMigrationToSeedNameColumnInMemberShipTypes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -323,6 +331,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709132146493_ApplyAnnotationsToCustomerName.resx">
       <DependentUpon>201709132146493_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709151230092_AddNameToMembershipType.resx">
+      <DependentUpon>201709151230092_AddNameToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709151238015_EmptyMigrationToSeedNameColumnInMemberShipTypes.resx">
+      <DependentUpon>201709151238015_EmptyMigrationToSeedNameColumnInMemberShipTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

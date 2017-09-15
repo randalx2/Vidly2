@@ -30,6 +30,8 @@ namespace Vidly2.Controllers
         // GET: Customers
         public ActionResult Index()
         {
+            //Eager Loading to pass objects related data
+            //Taken from the navigation property
             var customers = _context.Customers.Include(c => c.MembershipType).ToList();
 
             return View(customers);
