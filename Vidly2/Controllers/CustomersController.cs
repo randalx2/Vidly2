@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using Vidly2.Models;
 
+//For eager loading with EF
+using System.Data.Entity;
+
 namespace Vidly2.Controllers
 {
     public class CustomersController : Controller
@@ -27,7 +30,7 @@ namespace Vidly2.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-            var customers = _context.Customers.ToList();
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
 
             return View(customers);
         }
